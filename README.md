@@ -37,6 +37,18 @@ Service Instance SID | Like a database for your Chat data - [generate one in the
 ### 3. Run the project locally or push to Azure!
 Need help pushing this to Azure? Take a look at this [step by step guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function-azure-portal).
 
+### 4. Returns identity token
+Fully customizeable in Identity/run.csx
+```
+{
+  "token": "eyJjdHkiO.....",
+  "identity": "Jon D."
+}
+```
+You can see the inner workings of your generated token at [jwt.io](https://jwt.io/).
+
+### 5. Add New Grants to the Access Token
+This example creates a Programmable Chat Grant. Learn how to create grants in C# for all Twilio products in [Twilio's Documentation](https://www.twilio.com/docs/api/rest/access-tokens).
 ## Tips
  - Fun Fact, Azure Functions doesn't like "."s in project names. This is why the Azure function is called Token.
  
